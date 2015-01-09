@@ -1,5 +1,3 @@
-SUDO =
-
 PLATFORM ?= X64
 RELEASE ?= 0
 
@@ -11,14 +9,12 @@ AR = ar
 TR = tr
 
 #Global Compile Flags
-CFLAGS_GLOBAL = -fno-strict-aliasing -g -W -Wall -Werror -Wno-pointer-sign -Wno-unused-parameter -D$(PLATFORM)=1
-LDFLAGS_GLOBAL =
-ASFLAGS_GLOBAL =
+CFLAGS_GLOBAL = -g -W -Wall -Werror -Wno-unused-parameter -D$(PLATFORM)=1
+LDFLAGS_GLOBAL = 
 
 #Local Compile Flags
 CFLAGS_LOCAL =
 LDFLAGS_LOCAL =
-ASFLAGS_LOCAL =
 
 #Macros
 OBJ_DIR = OBJ-$(PLATFORM)
@@ -31,10 +27,9 @@ LDFLAGS_PATH += -L$(GLOBAL_PRELIB_DIR) -L$(GLOBAL_DYNLIB_DIR) -L$(GLOBAL_LIB_DIR
 #Basic Rule Action
 COMPILE = $(CC) $(CFLAGS_GLOBAL) $(CFLAGS_LOCAL) -MD -c -o $@ $<
 COMPILE_CXX = $(CPP) $(CFLAGS_GLOBAL) $(CFLAGS_LOCAL) -MD -c -o $@ $<
-ASSEMBLE = $(CC) $(ASFLAGS_GLOBAL) $(ASFLAGS_LOCAL) -MD -c -o $@ $<
 
 ifeq ($(RELEASE), 1)
-CFLAGS_GLOBAL += -O2 -DFLOW_MCHECK=1 -DMEM_NO_STAT=1 -DLICENSE_CHECK=1 -DSHELL_PASSWORD=1
+CFLAGS_GLOBAL += -O2
 else
 CFLAGS_GLOBAL += -DBUILD_DEBUG=1
 endif
