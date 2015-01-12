@@ -15,12 +15,6 @@
  * OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-/* eventlib.h - exported interfaces for eventlib
- * vix 09sep95 [initial]
- *
- * $Id: eventlib.h 18607 2008-04-18 01:48:37Z  $
- */
-
 #ifndef _EVENTLIB_H
 #define _EVENTLIB_H
 
