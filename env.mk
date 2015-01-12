@@ -18,7 +18,7 @@ LDFLAGS_LOCAL =
 
 #Macros
 OBJ_DIR = OBJ-$(PLATFORM)
-GLOBAL_PRELIB_DIR = $(TOP_DIR)/build/lib/
+GLOBAL_PRELIB_DIR = $(TOP_DIR)/build/prebuild/$(PLATFORM)
 GLOBAL_DYNLIB_DIR = $(TOP_DIR)/build/dynlib
 GLOBAL_LIB_DIR = $(TOP_DIR)/build/lib
 GLOBAL_BIN_DIR = $(TOP_DIR)/build/bin
