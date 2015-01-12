@@ -1,0 +1,2 @@
+./configure --disable-cpp --enable-newline-is-cr
+2) Renamed ucptable.c to ucptable.h 
