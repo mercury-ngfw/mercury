@@ -15,10 +15,6 @@
  * OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-/*
- * $Id: misc.h 2 2006-12-02 07:22:12Z timliu $
- */
-
 #ifndef _ISC_MISC_H
 #define _ISC_MISC_H
 

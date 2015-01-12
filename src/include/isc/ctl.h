@@ -18,10 +18,6 @@
  * OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-/*
- * $Id: ctl.h 2 2006-12-02 07:22:12Z timliu $
- */
-
 #include <sys/types.h>
 #include <sys/socket.h>
 

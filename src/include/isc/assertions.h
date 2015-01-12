@@ -15,10 +15,6 @@
  * OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-/*
- * $Id: assertions.h 2 2006-12-02 07:22:12Z timliu $
- */
-
 #ifndef ASSERTIONS_H
 #define ASSERTIONS_H		1
 

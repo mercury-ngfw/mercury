@@ -2,8 +2,6 @@
  *
  * vix 22jan93 [revisited; uses RCS, ANSI, POSIX; has bug fixes]
  * vix 27jun86 [broken out of tree.c]
- *
- * $Id: tree.h 2 2006-12-02 07:22:12Z timliu $
  */
 
 
