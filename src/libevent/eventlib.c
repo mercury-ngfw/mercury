@@ -37,7 +37,7 @@
 
 #include "port_after.h"
 
-int      __evOptMonoTime = 1;		/* HSOS: default is monotonic time */
+int __evOptMonoTime = 1;
 
 #ifdef USE_POLL
 #define pselect Pselect
